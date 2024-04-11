@@ -11,13 +11,13 @@ jobs:
       pages: write
       id-token: write
     environment:
-      name: github-pages
+      name: gh-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: yarn
@@ -28,10 +28,10 @@ jobs:
       - name: Build
         run: yarn docs:build
       - run: mv docs/.vitepress/mobile docs/.vitepress/dist/
-      - uses: actions/configure-pages@v2
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: docs/.vitepress/dist
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
