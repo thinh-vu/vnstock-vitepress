@@ -48,7 +48,7 @@ Thư viện **vnstock** cung cấp khả năng kết nối tới các API công 
 ## Đánh dấu yêu thích
 
 - Giúp **vnstock** đạt mục tiêu 1000 lượt yêu thích trên Github thông qua việc đánh dấu sao - **Star** tại trang dự án. Đây cũng là cách các bạn ủng hộ dự án và giúp lan tỏa vnstock đơn giản nhất giúp ích cho cộng đồng.
-  ![](../assets/images/vnstock-watch-and-star.png)
+  <!-- ![](../assets/images/vnstock-watch-and-star.png) -->
 
 ## Sử dụng trang tài liệu tối ưu
 
@@ -82,7 +82,7 @@ This function returns the list of all available stock symbols from a csv file or
 
 Tất nhiên, bạn luôn có thể mở phần mã nguồn của vnstock trên Github để xem chi tiết.
 
-=== "Docstring trong Google Colab"
+<!-- === "Docstring trong Google Colab"
 
     Gợi ý cú pháp hàm được hiển thị khi viết bất kỳ hàm nào thuộc vnstock, trong ví dụ này hiển thị trong giao diện Google Colab.
     
@@ -92,4 +92,4 @@ Tất nhiên, bạn luôn có thể mở phần mã nguồn của vnstock trên 
 
     Mở mã nguồn Github tại thư mục vnstock, tìm hàm bạn cần tra cứu docstring.
     
-    ![docstring source](../assets/images/docstring_source_code.png)
+    ![docstring source](../assets/images/docstring_source_code.png) -->
