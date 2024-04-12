@@ -11,7 +11,6 @@ function nav() {
   ];
 }
 function sidebar() {
-  base: "/vnstock-vitepress/docs/";
   const side = {};
   let files = fs.readdirSync("./docs");
   // console.log(files);
@@ -46,6 +45,7 @@ function sidebar() {
   return side;
 }
 module.exports = {
+  base: "/vnstock-vitepress/docs/",
   lang: "vi-VN",
   title: "Vnstock - API dữ liệu chứng khoán",
   description: "",
