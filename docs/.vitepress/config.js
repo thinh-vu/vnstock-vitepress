@@ -11,6 +11,7 @@ function nav() {
   ];
 }
 function sidebar() {
+  base: "/vnstock-vitepress/docs/";
   const side = {};
   let files = fs.readdirSync("./docs");
   // console.log(files);
