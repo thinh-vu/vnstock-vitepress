@@ -1,10 +1,10 @@
 import { useSSRContext, unref } from "vue";
 import { ssrRenderAttrs, ssrRenderStyle, ssrRenderComponent } from "vue/server-renderer";
-import { E as ECharts } from "./ECharts.ClSQc7Rl.js";
+import { E as ECharts } from "./ECharts.DsRcnRlV.js";
 import "echarts";
 import "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"Demo echart","description":"","frontmatter":{},"headers":[],"relativePath":"tai-lieu/candlestick_echart.md","filePath":"tai-lieu/candlestick_echart.md","lastUpdated":1712867361000}');
-const __default__ = { name: "tai-lieu/candlestick_echart.md" };
+const __pageData = JSON.parse('{"title":"Demo echart","description":"","frontmatter":{},"headers":[],"relativePath":"tai-lieu/echarts-candlestick.md","filePath":"tai-lieu/echarts-candlestick.md","lastUpdated":null}');
+const __default__ = { name: "tai-lieu/echarts-candlestick.md" };
 const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
   __ssrInlineRender: true,
   setup(__props) {
@@ -51,7 +51,7 @@ const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("tai-lieu/candlestick_echart.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("tai-lieu/echarts-candlestick.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 export {

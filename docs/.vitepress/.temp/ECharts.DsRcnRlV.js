@@ -20,7 +20,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         class: "echarts",
         ref_key: "chart",
         ref: chart
-      }, _attrs))} data-v-1b2117ac></div>`);
+      }, _attrs))} data-v-950f97f0></div>`);
     };
   }
 });
@@ -30,7 +30,7 @@ _sfc_main.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(".vitepress/theme/components/ECharts.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const ECharts = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-1b2117ac"]]);
+const ECharts = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-950f97f0"]]);
 export {
   ECharts as E
 };

@@ -1,8 +1,8 @@
 import { resolveComponent, useSSRContext } from "vue";
 import { ssrRenderAttrs, ssrRenderStyle, ssrRenderComponent } from "vue/server-renderer";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"\\"new Function\\"","description":"","frontmatter":{},"headers":[],"relativePath":"tai-lieu/new-function.md","filePath":"tai-lieu/new-function.md","lastUpdated":1712867361000}');
-const _sfc_main = { name: "tai-lieu/new-function.md" };
+const __pageData = JSON.parse('{"title":"\\"new Function\\"","description":"","frontmatter":{},"headers":[],"relativePath":"tai-lieu/split-code-block.md","filePath":"tai-lieu/split-code-block.md","lastUpdated":null}');
+const _sfc_main = { name: "tai-lieu/split-code-block.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_live_editor = resolveComponent("live-editor");
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="new-function" tabindex="-1">&quot;new Function&quot; <a class="header-anchor" href="#new-function" aria-label="Permalink to &quot;&quot;new Function&quot;&quot;">​</a></h1><h2 id="语法" tabindex="-1">语法 <a class="header-anchor" href="#语法" aria-label="Permalink to &quot;语法&quot;">​</a></h2><blockquote><p>创建 Function 的语法：通过使用参数<code>arg1...argN</code>和最后给定的<code>functionBody</code>创建</p></blockquote><div class="language-javascript vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span style="${ssrRenderStyle({ "--shiki-light": "#D73A49", "--shiki-dark": "#F97583" })}">const</span><span style="${ssrRenderStyle({ "--shiki-light": "#005CC5", "--shiki-dark": "#79B8FF" })}"> func</span><span style="${ssrRenderStyle({ "--shiki-light": "#D73A49", "--shiki-dark": "#F97583" })}"> =</span><span style="${ssrRenderStyle({ "--shiki-light": "#D73A49", "--shiki-dark": "#F97583" })}"> new</span><span style="${ssrRenderStyle({ "--shiki-light": "#6F42C1", "--shiki-dark": "#B392F0" })}"> Function</span><span style="${ssrRenderStyle({ "--shiki-light": "#24292E", "--shiki-dark": "#E1E4E8" })}">([arg1, arg2, </span><span style="${ssrRenderStyle({ "--shiki-light": "#D73A49", "--shiki-dark": "#F97583" })}">...</span><span style="${ssrRenderStyle({ "--shiki-light": "#24292E", "--shiki-dark": "#E1E4E8" })}">argN], functionBody);</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><blockquote><p>下面的例子是一个带有两个参数和一个不带参数的方法：</p></blockquote>`);
@@ -44,11 +44,11 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("tai-lieu/new-function.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("tai-lieu/split-code-block.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const newFunction = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+const splitCodeBlock = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 export {
   __pageData,
-  newFunction as default
+  splitCodeBlock as default
 };

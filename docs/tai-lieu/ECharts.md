@@ -1,4 +1,4 @@
-# VitePress 扩展 ECharts
+# VitePress ECharts
 
 ```javascript echarts
 option = {

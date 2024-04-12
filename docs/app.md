@@ -7,6 +7,6 @@ layout: home
     frameborder="0"
     width="100%"
     height="900"
-    style="min-width: 1080px;"
+    style="min-width: 1500px;"
 ></iframe>
 

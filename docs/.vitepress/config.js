@@ -10,40 +10,44 @@ function nav() {
     { text: 'Giới thiệu', link: '/gioi-thieu' },
   ];
 }
-function sidebar() {
-  const side = {};
-  let files = fs.readdirSync("./docs");
-  // console.log(files);
-  files.forEach((item) => {
-    // console.log(fs.statSync("./docs/" + item).isDirectory());
-    if (item !== "public" && !item.startsWith(".")) {
-      if (fs.statSync("./docs/" + item).isDirectory()) {
-        const items = [];
-        let mds = fs.readdirSync("./docs/" + item);
-        mds.forEach((md) => {
-          if (md !== "index.md" && md.endsWith(".md")) {
-            if (fs.statSync("./docs/" + item + "/" + md).isFile()) {
-              let name = md.replace(".md", "");
-              items.push({
-                text: name,
-                link: "/" + item + "/" + name,
-                activeMatch: "/" + item + "/" + name,
-              });
-            }
-          }
-        });
-        items.sort();
-        side[`/${item}/`] = [
-          {
-            text: item,
-            items,
-          },
-        ];
-      }
-    }
-  });
-  return side;
-}
+
+// Dynamic sidebar generation from docs folder, produce name of the md files
+// function sidebar() {
+//   const side = {};
+//   let files = fs.readdirSync("./docs");
+//   // console.log(files);
+//   files.forEach((item) => {
+//     // console.log(fs.statSync("./docs/" + item).isDirectory());
+//     if (item !== "public" && !item.startsWith(".")) {
+//       if (fs.statSync("./docs/" + item).isDirectory()) {
+//         const items = [];
+//         let mds = fs.readdirSync("./docs/" + item);
+//         mds.forEach((md) => {
+//           if (md !== "index.md" && md.endsWith(".md")) {
+//             if (fs.statSync("./docs/" + item + "/" + md).isFile()) {
+//               let name = md.replace(".md", "");
+//               items.push({
+//                 text: name,
+//                 link: "/" + item + "/" + name,
+//                 activeMatch: "/" + item + "/" + name,
+//               });
+//             }
+//           }
+//         });
+//         items.sort();
+//         side[`/${item}/`] = [
+//           {
+//             text: item,
+//             items,
+//           },
+//         ];
+//       }
+//     }
+//   });
+//   return side;
+// }
+
+
 module.exports = {
   base: "/vnstock-vitepress/",
   lang: "vi-VN",
@@ -143,8 +147,26 @@ module.exports = {
       },
     },
     nav: nav(),
-    sidebar: sidebar(),
+    sidebar: {
+      '/tai-lieu/': [
+        {
+          text: 'Tài liệu',
+          items: [
+            { text: 'Demo Echarts', link: '/tai-lieu/ECharts' },
+            { text: 'Đồ thị nến Echarts', link: '/tai-lieu/echarts-candlestick' },
+            { text: 'Cửa sổ lệnh', link: '/tai-lieu/split-code-block' },
+            // other links for the guide section
+          ]
+        }
+      ],
+      // Default sidebar used if no other sidebar is matched
+      '/': [
+        { text: 'Home', link: '/' },
+        // other links for the homepage or root section
+      ]
+    }
   },
+  
   markdown: {
     lineNumbers: true,
     config: (md) => {
