@@ -38,7 +38,7 @@
     "less": "^4.1.3",
     "prismjs": "^1.29.0",
     "vite": "^4.1.4",
-    "vitepress-plugin-search": "^1.0.4-alpha.19",
+    "vitepress-plugin-search": "^1.0.4-alpha.22",
     "vitest": "^1.5.0",
     "vue": "^3.2.45",
     "vue-inbrowser-compiler-sucrase": "^4.56.6"
