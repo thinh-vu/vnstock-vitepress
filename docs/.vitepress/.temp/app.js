@@ -54,8 +54,8 @@ _sfc_main$19.setup = (props2, ctx) => {
 function deserializeFunctions(r) {
   return Array.isArray(r) ? r.map(deserializeFunctions) : typeof r == "object" && r !== null ? Object.keys(r).reduce((t, n) => (t[n] = deserializeFunctions(r[n]), t), {}) : typeof r == "string" && r.startsWith("_vp-fn_") ? new Function(`return ${r.slice(7)}`)() : r;
 }
-const siteData = deserializeFunctions(JSON.parse('{"lang":"vi-VN","dir":"ltr","title":"Vnstock - API dữ liệu chứng khoán","description":"A VitePress site","base":"/","head":[],"router":{"prefetchLinks":true},"appearance":true,"themeConfig":{"siteTitle":"Vnstock","socialLinks":[{"icon":"github","link":"https://github.com/thinh-vu/vnstock"}],"docFooter":{"prev":"Trước","next":"Tiếp theo"},"footer":{"message":"","copyright":"Bản quyền thuộc về Vnstock © 2022 Thinh Vu"},"logo":"/vnstock_logo_rec.png","outline":"deep","outlineTitle":"Mục lục","outlineBadges":true,"lastUpdated":{"text":"Mới nhất","formatOptions":{"forceLocale":true,"dateStyle":"medium","timeStyle":"short","timeZone":"Asia/Ho_Chi_Minh"}},"nav":[{"text":"Trang chủ","link":"/"},{"text":"Tài liệu","link":"/tai-lieu/","activeMatch":"/tai-lieu/"},{"text":"App","link":"/app"},{"text":"Blog","link":"/blog/"},{"text":"Giới thiệu","link":"/gioi-thieu"}],"sidebar":{"/blog/":[{"text":"blog","items":[{"text":"cap-nhat-quan-trong","link":"/blog/cap-nhat-quan-trong","activeMatch":"/blog/cap-nhat-quan-trong"},{"text":"ra-mat-phien-ban-moi","link":"/blog/ra-mat-phien-ban-moi","activeMatch":"/blog/ra-mat-phien-ban-moi"}]}],"/tai-lieu/":[{"text":"tai-lieu","items":[{"text":"ECharts","link":"/tai-lieu/ECharts","activeMatch":"/tai-lieu/ECharts"},{"text":"candlestick_echart","link":"/tai-lieu/candlestick_echart","activeMatch":"/tai-lieu/candlestick_echart"},{"text":"new-function","link":"/tai-lieu/new-function","activeMatch":"/tai-lieu/new-function"}]}]}},"locales":{},"scrollOffset":134,"cleanUrls":true}'));
-var define_import_meta_env_default = { BASE_URL: "/", MODE: "production", DEV: false, PROD: true, SSR: true };
+const siteData = deserializeFunctions(JSON.parse('{"lang":"vi-VN","dir":"ltr","title":"Vnstock - API dữ liệu chứng khoán","description":"A VitePress site","base":"/vnstock-vitepress/","head":[],"router":{"prefetchLinks":true},"appearance":true,"themeConfig":{"siteTitle":"Vnstock","socialLinks":[{"icon":"github","link":"https://github.com/thinh-vu/vnstock"}],"docFooter":{"prev":"Trước","next":"Tiếp theo"},"footer":{"message":"","copyright":"Bản quyền thuộc về Vnstock © 2022 Thinh Vu"},"logo":"/vnstock_logo_rec.png","outline":"deep","outlineTitle":"Mục lục","outlineBadges":true,"lastUpdated":{"text":"Mới nhất","formatOptions":{"forceLocale":true,"dateStyle":"medium","timeStyle":"short","timeZone":"Asia/Ho_Chi_Minh"}},"nav":[{"text":"Trang chủ","link":"/"},{"text":"Tài liệu","link":"/tai-lieu/","activeMatch":"/tai-lieu/"},{"text":"App","link":"/app"},{"text":"Blog","link":"/blog/"},{"text":"Giới thiệu","link":"/gioi-thieu"}],"sidebar":{"/blog/":[{"text":"blog","items":[{"text":"cap-nhat-quan-trong","link":"/blog/cap-nhat-quan-trong","activeMatch":"/blog/cap-nhat-quan-trong"},{"text":"ra-mat-phien-ban-moi","link":"/blog/ra-mat-phien-ban-moi","activeMatch":"/blog/ra-mat-phien-ban-moi"}]}],"/tai-lieu/":[{"text":"tai-lieu","items":[{"text":"ECharts","link":"/tai-lieu/ECharts","activeMatch":"/tai-lieu/ECharts"},{"text":"candlestick_echart","link":"/tai-lieu/candlestick_echart","activeMatch":"/tai-lieu/candlestick_echart"},{"text":"new-function","link":"/tai-lieu/new-function","activeMatch":"/tai-lieu/new-function"}]}]}},"locales":{},"scrollOffset":134,"cleanUrls":true}'));
+var define_import_meta_env_default = { BASE_URL: "/vnstock-vitepress/", MODE: "production", DEV: false, PROD: true, SSR: true };
 const EXTERNAL_URL_RE = /^(?:[a-z]+:|\/\/)/i;
 const APPEARANCE_KEY = "vitepress-theme-appearance";
 const HASH_RE = /#.*$/;
@@ -218,7 +218,7 @@ function pathToFile(path) {
   pagePath = pagePath.replace(/\/$/, "/index");
   {
     if (inBrowser) {
-      const base = "/";
+      const base = "/vnstock-vitepress/";
       pagePath = sanitizeFileName(pagePath.slice(base.length).replace(/\//g, "_") || "index") + ".md";
       let pageHash = __VP_HASH_MAP__[pagePath.toLowerCase()];
       if (!pageHash) {
@@ -2996,7 +2996,7 @@ _sfc_main$z.setup = (props2, ctx) => {
   return _sfc_setup$z ? _sfc_setup$z(props2, ctx) : void 0;
 };
 const VPNavBarMenu = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["__scopeId", "data-v-7f418b0f"]]);
-const _imports_0 = "/assets/flex-logo.BJA2J7hW.svg";
+const _imports_0 = "/vnstock-vitepress/assets/flex-logo.BJA2J7hW.svg";
 function parse_option(a, b) {
   return "undefined" == typeof a ? b : a;
 }
