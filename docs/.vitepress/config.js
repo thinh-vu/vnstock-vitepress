@@ -45,7 +45,6 @@ function sidebar() {
   return side;
 }
 module.exports = {
-  base: "/docs/",
   lang: "vi-VN",
   title: "Vnstock - API dữ liệu chứng khoán",
   description: "",
