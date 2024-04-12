@@ -45,7 +45,7 @@ function sidebar() {
   return side;
 }
 module.exports = {
-  base: "/vnstock-vitepress/docs/",
+  base: "/vnstock-vitepress/",
   lang: "vi-VN",
   title: "Vnstock - API dữ liệu chứng khoán",
   description: "",
