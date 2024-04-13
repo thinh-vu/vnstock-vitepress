@@ -3,7 +3,7 @@ import { ssrRenderAttrs, ssrRenderStyle, ssrRenderComponent } from "vue/server-r
 import { E as ECharts } from "./ECharts.DsRcnRlV.js";
 import "echarts";
 import "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"VitePress ECharts","description":"","frontmatter":{},"headers":[],"relativePath":"tai-lieu/ECharts.md","filePath":"tai-lieu/ECharts.md","lastUpdated":1712867361000}');
+const __pageData = JSON.parse('{"title":"VitePress ECharts","description":"","frontmatter":{},"headers":[],"relativePath":"tai-lieu/ECharts.md","filePath":"tai-lieu/ECharts.md","lastUpdated":1712960231000}');
 const __default__ = { name: "tai-lieu/ECharts.md" };
 const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
   __ssrInlineRender: true,

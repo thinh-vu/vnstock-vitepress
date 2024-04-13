@@ -4,10 +4,34 @@ import vueLiveMd from "./vue-live-md-it.mjs";
 function nav() {
   return [
     { text: 'Trang chủ', link: '/' },
-    { text: 'Tài liệu', link: '/tai-lieu/', activeMatch: "/tai-lieu/"},
-    { text: 'App', link: '/app' },
+    { text: 'App', link: '/app/' },
+    {
+      text: 'Giải pháp',
+      activeMatch: `^/giai-phap/`,
+      items: [
+        { text: 'Kết nối dữ liệu', link: '/giai-phap/datafeed' },
+        { text: 'Khám phá dữ liệu', link: '/giai-phap/kham-pha-du-lieu' },
+        { text: 'Ứng dụng phân tích', link: '/giai-phap/phan-tich' },
+        { text: 'Bot chứng khoán', link: '/giai-phap/bot-app-chung-khoan' },
+        { text: 'Đào tạo thực chiến', link: '/giai-phap/dao-tao' },
+      ]
+    },
+    {
+      text: 'Tài liệu',
+      activeMatch: `^/(tinh-nang|tai-lieu)/`,
+      items: [
+        { text: 'Hướng dẫn nhanh', link: '/huong-dan/index' },
+        { text: 'Dữ liệu chứng khoán', link: '/tinh-nang/datafeed/' },
+        { text: 'Khám phá dữ liệu', link: '/tinh-nang/kham-pha/' },
+        { text: 'Tích hợp', link: '/tich-hop/' },
+        { text: 'Câu hỏi thường gặp', link: '/faq/' },
+        { text: 'Lịch sử thay đổi', link: '/huong-dan/phien-ban' },
+      ]
+    },
+    { text: 'Cộng đồng', link: '/cong-dong/' },
     { text: 'Blog', link: '/blog/'},
-    { text: 'Giới thiệu', link: '/gioi-thieu' },
+    { text: 'Khoá học', link: '/khoa-hoc/'},
+    { text: 'Giới thiệu', link: '/gioi-thieu/' },
   ];
 }
 
@@ -130,8 +154,11 @@ module.exports = {
       next: "Tiếp theo",
     },
     footer: {
-      message: "",
-      copyright: "Bản quyền thuộc về Vnstock © 2022 Thinh Vu",
+      license: {
+        text: 'MIT License',
+        link: 'https://opensource.org/licenses/MIT'
+      },
+      copyright: `Copyright © 2022-${new Date().getFullYear()} Thinh Vu @ Vnstock`
     },
     logo: "/vnstock_logo_rec.png",
     outline: "deep",
@@ -155,18 +182,26 @@ module.exports = {
             { text: 'Demo Echarts', link: '/tai-lieu/ECharts' },
             { text: 'Đồ thị nến Echarts', link: '/tai-lieu/echarts-candlestick' },
             { text: 'Cửa sổ lệnh', link: '/tai-lieu/split-code-block' },
-            // other links for the guide section
+          ]
+        }
+      ],
+      '/gioi-thieu/': [
+        {
+          text: 'Giới thiệu',
+          items: [
+            { text: 'Tác giả', link: '/gioi-thieu/tac-gia-vnstock' },
+            { text: 'Tri ân', link: '/gioi-thieu/tri-an' },
           ]
         }
       ],
       // Default sidebar used if no other sidebar is matched
       '/': [
-        { text: 'Home', link: '/' },
+        { text: 'Trang chủ', link: '/' },
         // other links for the homepage or root section
       ]
     }
   },
-  
+
   markdown: {
     lineNumbers: true,
     config: (md) => {

@@ -1,7 +1,7 @@
 import { resolveComponent, useSSRContext } from "vue";
 import { ssrRenderAttrs, ssrRenderStyle, ssrRenderComponent } from "vue/server-renderer";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"\\"new Function\\"","description":"","frontmatter":{},"headers":[],"relativePath":"tai-lieu/split-code-block.md","filePath":"tai-lieu/split-code-block.md","lastUpdated":null}');
+const __pageData = JSON.parse('{"title":"\\"new Function\\"","description":"","frontmatter":{},"headers":[],"relativePath":"tai-lieu/split-code-block.md","filePath":"tai-lieu/split-code-block.md","lastUpdated":1712960231000}');
 const _sfc_main = { name: "tai-lieu/split-code-block.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_live_editor = resolveComponent("live-editor");

@@ -1,5 +1,7 @@
 # Demo echart 
 
+Đồ thị nến Echarts
+
 ```javascript echarts
 option = {
   xAxis: {
@@ -18,4 +20,5 @@ option = {
     }
   ]
 };
+
 ```

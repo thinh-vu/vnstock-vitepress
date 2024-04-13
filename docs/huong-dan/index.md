@@ -3,7 +3,7 @@ outline: deep
 title: Cài đặt
 ---
 
-# Hướng dẫn nhanh
+# Hướng dẫn nhanh <Badge type="tip" text="v3.0.0" />
 
 <div id="logo" align="center">
     <a href="http://vnstock.site?utm_source=vnstock_docs&utm_medium=start&utm_content=logo">

@@ -41,7 +41,7 @@
     "vite": "^4.1.4",
     "vitepress-plugin-search": "^1.0.4-alpha.22",
     "vitest": "^1.5.0",
-    "vue": "^3.2.45",
+    "vue": "^3.4.21",
     "vue-inbrowser-compiler-sucrase": "^4.56.6"
   }
 }

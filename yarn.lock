@@ -2556,7 +2556,7 @@ vue-router@^4.2.5:
   dependencies:
     "@vue/devtools-api" "^6.5.1"
 
-vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.2.0, vue@^3.2.25, vue@^3.2.45, vue@^3.4.15, vue@^3.4.21, vue@>=2, vue@3, vue@3.4.21:
+vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.2.0, vue@^3.2.25, vue@^3.4.15, vue@^3.4.21, vue@>=2, vue@3, vue@3.4.21:
   version "3.4.21"
   resolved "https://registry.npmjs.org/vue/-/vue-3.4.21.tgz"
   integrity sha512-5hjyV/jLEIKD/jYl4cavMcnzKwjMKohureP8ejn3hhEjwhWIhWeuzL2kJAjzl/WyVsgPY56Sy4Z40C3lVshxXA==

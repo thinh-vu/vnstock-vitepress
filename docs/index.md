@@ -11,54 +11,25 @@ hero:
   actions:
     - theme: brand
       text: Hướng dẫn nhanh
-      link: /huong-dan-nhanh
+      link: /huong-dan
     - theme: alt
       text: Câu hỏi thường gặp
-      link: /huong-dan-nhanh
+      link: /faq/index
 
 features:
   - icon:
-      src: /img/javascript.svg
-    title: Phân tích dữ liệu thời gian thực
-    details: Trải nghiệm tốc độ và hiệu suất vượt trội với công nghệ tiên tiến của chúng tôi.
+      src: /img/coding_5486499.png
+    title: Minh bạch & Tin cậy
+    details: Mã nguồn mở, tự do tùy biến thư viện theo sở thích và kiến thức đầu tư của mình.
   - icon:
-      src: /img/react.svg
-    title: Thiết kế trực quan
-    details: Dễ dàng tìm kiếm và sử dụng, tối ưu hóa trải nghiệm người dùng.
+      src: /img/puzzle-toy-svgrepo-com.svg
+    title: Giải pháp hoàn thiện
+    details: Xây dựng giải pháp giao dịch toàn diện với bộ API hoàn chỉnh cho Python tại Việt Nam.
   - icon:
-      src: /img/css.svg
-    title: Bảo mật mạnh mẽ
-    details: Tin cậy vào các biện pháp bảo mật hàng đầu của chúng tôi để bảo vệ dữ liệu của bạn.
-  # - icon:
-  #     src: /img/vue.svg
-  #   title: Vue
-  #   details: ""
-  #   link: /Vue3/
-  # - icon:
-  #     src: /img/react.svg
-  #   title: React
-  #   details: ""
-  #   link: /React/
-  # - icon:
-  #     src: /img/css.svg
-  #   title: CSS
-  #   details: ""
-  #   link: /CSS/
-  # - icon:
-  #     src: /img/javascript.svg
-  #   title: Javascript
-  #   details: ""
-  #   link: /Javascript/
-  # - icon:
-  #     src: /img/typescript.svg
-  #   title: Typescript
-  #   details: ""
-  #   link: /Typescript/
-  # - icon:
-  #     src: /img/shell.svg
-  #   title: Shell
-  #   details: ""
-  #   link: /Shell/
+      src: /img/lightning-thunder-svgrepo-com.svg
+    title: Đơn giản, hiệu quả
+    details: Truy xuất dữ liệu nhanh chóng. Kết nối mọi nơi, hoạt động trên mọi thiết bị có internet.
+
 
 footer: Made with ❤️ by VNStock
 ---
